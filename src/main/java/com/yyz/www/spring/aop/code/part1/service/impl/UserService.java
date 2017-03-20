@@ -1,6 +1,6 @@
-package com.yyz.www.spring.aop.code.part0.service.impl;
+package com.yyz.www.spring.aop.code.part1.service.impl;
 
-import com.yyz.www.spring.aop.code.part0.service.IUserService;
+import com.yyz.www.spring.aop.code.part1.service.IUserService;
 import org.springframework.stereotype.Service;
 
 /**

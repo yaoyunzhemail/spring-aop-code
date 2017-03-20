@@ -1,4 +1,4 @@
-package com.yyz.www.spring.aop.code.part0.aspect;
+package com.yyz.www.spring.aop.code.part1.aspect;
 
 import org.apache.log4j.Logger;
 import org.aspectj.lang.JoinPoint;
@@ -21,7 +21,7 @@ public class AllLogAdvice {
     // @Pointcut("@within(org.springframework.transaction.annotation.Transactional)")
     // @Pointcut("@annotation(org.springframework.transaction.annotation.Transactional)")
     // @Pointcut("args(String)")
-    @Pointcut("execution(* com.yyz.www.spring.aop.code.part0.service.*.add*(..)) || execution(* com.yyz.www.spring.aop.code.part0.service.*.delete*(..))")
+    @Pointcut("execution(* *.add*(..)) || execution(* *.delete*(..))")
     public void pointcut1() {
         // 定义一个pointcut，下面用Annotation标注的通知方法可以公用这个pointcut
     }
@@ -43,7 +43,7 @@ public class AllLogAdvice {
     }
 
     // 最终置通知
-    @After("execution(* com.yyz.www.spring.aop.code.part0.service.*.add*(..))")
+    @After("execution(* *.add*(..))")
     public void doAfter() {
         logger.info("这是最终通知");
     }

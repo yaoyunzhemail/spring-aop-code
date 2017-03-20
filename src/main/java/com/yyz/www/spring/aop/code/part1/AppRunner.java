@@ -1,12 +1,10 @@
-package com.yyz.www.spring.aop.code.part0;
+package com.yyz.www.spring.aop.code.part1;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
-import com.yyz.www.spring.aop.code.part0.service.IUserService;
+import com.yyz.www.spring.aop.code.part1.service.IUserService;
 
 /**
  * Created by yaoyunzhe on 2017-03-20.
